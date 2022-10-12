@@ -1,0 +1,390 @@
+/**
+ * @name Lilliecord
+ * @author lillianskull
+ * @description Fairly "default" theme with a me twist on it.
+ * @version 0.0.1
+ */
+
+/* Personal Imports */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+/* Imports */
+@import url(https://maendisease.github.io/BetterDiscordStuff/css/NormalizedForums.css);
+@import url(https://dablulite.github.io/accountdetailscolumns/import.css);
+
+:root {
+    --background-primary: rgba(41, 42, 47, 1) !important;
+    --background-secondary: rgba(36, 37, 42, 1) !important;
+    --background-tertiary: rgba(32, 33, 38, 1) !important;
+
+    --accent-color: rgba(255, 105, 120, 1);
+    --accent-color-opacity: rgba(255, 105, 120, 0.25); /* copy paste original accent color and change the last number to 0.25 */
+    --accent-color-darker: rgba(222, 42, 99, 1); /* change this to a darker color / pretty much any color */
+
+    --font-primary: 'Source Sans Pro', sans-serif;
+    --font-display: 'Source Sans Pro', sans-serif;
+    --font-code: 'JetBrains Mono', monospace;
+
+    --brand-experiment: var(--accent-color);
+    --brand-experiment-560: var(--accent-color-darker);
+    --brand-experiment-600: var(--accent-color-darker);
+}
+
+.theme-dark {
+    --background-primary: rgba(41, 42, 47, 1) !important;
+    --background-secondary: rgba(36, 37, 42, 1) !important;
+    --background-tertiary: rgba(32, 33, 38, 1) !important;
+}
+
+/* Header */
+.container-ZMc96U .themed-Hp1KC_ {
+    background: var(--background-tertiary) !important;
+}
+
+/* User Panel */
+.panels-3wFtMD {
+    background: var(--background-secondary);
+    border: 1px solid var(--background-tertiary);
+    border-radius: 15px;
+    box-shadow: 0 0.25px 6px 2px rgba(32, 33, 38, 0.5);
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+/* Profile */
+.userProfileInner-3F03PX{
+    background: var(--background-tertiary) !important;
+}
+
+.profileBadges-31rDHI {
+    background: var(--background-primary) !important;
+}
+
+.userPopoutOverlayBackground-dKOOda {
+    background: var(--background-secondary);
+}
+
+.userPopoutOverlayBackground-dKOOda > .scroller-1jBQYo > .section-3FmfOT > .markup-eYLPri, .memberSinceContainer-3biwiY, .roles-3zC7MX {
+    background: var(--background-primary) !important;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.userPopoutOverlayBackground-dKOOda .banner-2boKnS::after {
+    background: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 100%) !important;
+}
+
+.root-8LYsGj {
+    --background-floating: var(--background-tertiary);
+}
+
+.root-8LYsGj .markup-eYLPri, .memberSinceContainer-2CBD23 {
+    background: var(--background-primary);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.roles-3zC7MX > .role-2TIOKu {
+    background: var(--background-secondary);
+    border-radius: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* Interactables (Buttons) */
+.lookFilled-yCfaCM, .bd-button {
+    background: var(--background-tertiary) !important;
+}
+
+.lookFilled-yCfaCM:hover, .bd-button:hover {
+    background: var(--accent-color) !important;
+}
+
+.button-12Fmur:hover, .button-2fCJ0o:hover, .buttonWrapper-3YFQGJ:hover, .attachButton-_ACFSu:hover {
+    color: var(--accent-color) !important;
+    background: transparent !important;
+}
+
+.buttonColor-3bP3fX, .button-1EGGcP, .buttonColor-3bP3fX {
+    border: 0 solid var(--accent-color) !important;
+
+    transition: border 0.5s, ease-in;
+}
+
+.buttonColor-3bP3fX:hover, .button-1EGGcP:hover, .buttonColor-3bP3fX:hover {
+    color: var(--accent-color) !important;
+    background: transparent !important;
+    border: 1.25px solid var(--accent-color) !important;
+
+    transition: border color 0.5s, ease-in;
+}
+
+*[role*='switch'][aria-checked*='true'] .mentionButton-3C5YMI {
+    color: var(--accent-color) !important;
+    transition: color 0.075s ease-in;
+}
+
+*[role*='switch'][aria-checked*='false'] .mentionButton-3C5YMI {
+    color: var(--text-muted) !important;
+    transition: color 0.075s ease-out;
+}
+
+.navButtonActive-1EqC5l {
+    background: var(--background-secondary);
+}
+
+.reactions-3ryImn > .reaction-3vwAF2 {
+    background: var(--accent-color-opacity) !important;
+}
+
+/* Text Areas, etc. */
+.scrollableContainer-15eg7h, .searchBar-jGtisZ, .messageInputContainer-2rGDH8 {
+    background: var(--background-secondary);
+    border: 1px solid var(--background-tertiary);
+    border-radius: 25px;
+
+    transition: margin 0.125s, border 0.125s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+}
+
+.scrollableContainer-15eg7h:focus-within, .scrollableContainer-15eg7h:hover {
+    border: 1px solid var(--accent-color);
+    margin-left: -0.725rem;
+    margin-right: -0.725rem;
+
+    transition: margin 0.125s, border 0.125s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+}
+
+.messageInputContainer-2rGDH8:focus-within, .messageInputContainer-2rGDH8:hover {
+    border: 1px solid var(--accent-color);
+    margin-left: -0.25rem;
+    margin-right: -0.25rem;
+
+    transition: margin 0.125s, border 0.125s cubic-bezier(0.230, 1.000, 0.320, 1.000); 
+}
+
+.input-3r5zZY:focus-within, .input-3r5zZY:hover {
+    border: 1px solid var(--accent-color);
+    margin-left: -0.725rem;
+    margin-right: -0.725rem;
+
+    transition: margin 0.125s, border 0.125s cubic-bezier(0.230, 1.000, 0.320, 1.000); 
+}
+
+.autocomplete-3NRXG8 {
+    background: transparent;
+}
+
+.autocomplete-3NRXG8 > .autocompleteInner-y1mjDl {
+    background: var(--background-secondary);
+}
+
+pre > code {
+    font-family: var(--font-code);
+}
+
+/* Embeds */
+.embed-hKpSrO {
+    background: var(--background-secondary);
+}
+
+/* Notifications, Toasts, etc. */
+.lowerBadge-3WTshO .numberBadge-37OJ3S, .live-1V2D, .unreadMentionsBar-ZXXoOH {
+    display: none;
+}
+
+/* Misc. */
+*::-webkit-scrollbar { /* frick u scrollbar >:( */
+    display: none;
+}
+
+.textBadge-1fdDPJ {
+    color: rgb(255, 255, 255);
+    background: var(--accent-color) !important;
+}
+
+.newMemberBadge-3PdStX, .dot-SviNJC {
+    display: none;
+}
+
+.botTag-2mryIa {
+    box-shadow: 0 0 1.5px 0 rgba(32, 33, 38, 0.5);
+}
+
+.layerContainer-2v_Sit > .backdrop-2ByYRN {
+    background: rgba(0, 0, 0, 1) !important;
+    backdrop-filter: blur(50px) brightness(0.75);
+}
+
+.layerContainer-2v_Sit .root-8LYsGj .scroller-1bVxF5 {
+    background: var(--background-primary);
+    box-shadow: 0 0 6px 0 rgba(32, 33, 38, 0.5);
+}
+
+.repliedTextContentIcon-1LQXRB:hover {
+    color: var(--accent-color) !important;
+}
+
+.scroller-1ox3I2 .mainContent-uDGa6R:hover .overflow-1wOqNV {
+    transform: translateX(5px);
+
+    transition: transform 0.125s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+}
+
+.inspector-DFKXwB {
+    background: var(--background-tertiary);
+}
+
+.container-2O1UgZ {
+    border: none;
+    box-shadow: 0 0 3px 0 rgba(32, 33, 38, 0.25);
+}
+
+.scroller-1bVxF5 {
+    background: var(--background-secondary);
+}
+
+.scroller-1ox3I2 .mainContent-uDGa6R:hover .arrow-2HswgU {
+    opacity: 100;
+
+    transition: opacity 0.125s ease-out;
+}
+
+.scroller-1ox3I2 .mainContent-uDGa6R .arrow-2HswgU {
+    transform: translateX(5px);
+    opacity: 0;
+
+    transition: opacity 0.125s, transform 0.125s, ease-in;
+}
+
+.scroller-1ox3I2 .mainContent-uDGa6R .overflow-1wOqNV {
+    transition: transform 0.125s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+}
+
+.mainContent-20q_Hp::before {
+    opacity: 0;
+    transition: opacity 0.125s ease-in;
+}
+
+.mainContent-20q_Hp {
+    opacity: 100;
+    transition: opacity 0.125s ease-out;
+}
+
+.wrapper-2SplAX {
+    background: var(--background-secondary);
+}
+
+.modal-3Hrb0S {
+    background: var(--background-secondary);
+}
+
+/* Settings */
+.sidebarRegionScroller-FXiQOh {
+    background: var(--background-tertiary);
+}
+
+.sidebar-nqHbhN > .side-2ur1Qk {
+    background: var(--background-secondary);
+    border-radius: 5px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
+    margin-right: 5%;
+    padding: 10px;
+}
+
+.contentRegionScroller-2_GT_N {
+    background: var(--background-secondary);
+}
+
+.activeGame-1OdxzI {
+    background: var(--background-tertiary) !important;
+}
+
+.addGamePopout-2SKNIV {
+    background: var(--background-secondary) !important;
+}
+
+.addGamePopout-2SKNIV > .select-1Ia3hD {
+    background: var(--background-primary) !important;
+}
+
+.select-1Ia3hD {
+    background: var(--background-secondary) !important;
+    border: none;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
+}
+
+.fieldList-in8WkP > .field-21XZwa .fieldButton-14lHvK:hover {
+    background: var(--accent-color) !important;
+}
+
+.connectionList-11Q_X- {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.connectionList-11Q_X- > .connection-YOVI9j {
+    box-shadow: 0 0 6px 2px rgba(32, 33, 38, 0.25);
+}
+
+.connectionList-11Q_X- > .connection-YOVI9j > .connectionHeader-Ixbb1s {
+    background: var(--background-secondary);
+}
+
+.connectionList-11Q_X- > .connection-YOVI9j > .connectionOptionsWrapper-3aVWcp {
+    background: var(--background-tertiary);
+}
+
+/* Friends List */
+.peopleList-2VBrVI > .content-2a4AW9 .peopleListItem-u6dGxF {
+    background: var(--background-secondary);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 2px rgba(32, 33, 38, 0.25);
+    margin-bottom: 5px;
+    padding: 5px;
+
+    transition: transform 0.125s, box-shadow 0.125s, border 0.125s ease-in;
+}
+
+.nowPlayingColumn-1eCBCN > .container-1oAagU .itemCard-3Etziu {
+    background: var(--background-secondary);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 2px rgba(32, 33, 38, 0.25);
+    margin-bottom: 5px;
+    padding: 5px;
+
+    transition: transform 0.125s, box-shadow 0.125s, border 0.125s ease-in;
+}
+
+.peopleList-2VBrVI > .content-2a4AW9:nth-child(1) {
+    margin-top: 5px;
+}
+
+.peopleList-2VBrVI > .content-2a4AW9 .peopleListItem-u6dGxF:hover {
+    transform: scale(1.025);
+    border: 1px solid var(--accent-color);
+    box-shadow: 0 2px 8px 0 rgba(32, 33, 38, 0.25);
+
+    transition: transform 0.125s, box-shadow 0.125s, border 0.125s ease-out;
+}
+
+.nowPlayingColumn-1eCBCN > .container-1oAagU .itemCard-3Etziu:hover {
+    transform: scale(1.025);
+    border: 1px solid var(--accent-color);
+    box-shadow: 0 2px 8px 0 rgba(32, 33, 38, 0.25);
+
+    transition: transform 0.125s, box-shadow 0.125s, border 0.125s ease-out;
+}
+
+/* Server Settings */
+.inputDefault-3FGxgL {
+    background: var(--background-tertiary);
+}
+
+/* Public Servers */
+.bd-card-list > .bd-server-card {
+    background: var(--background-tertiary);
+    box-shadow: 0 0 6px 2px rgba(32, 33, 38, 0.25);
+}
